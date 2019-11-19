@@ -1,0 +1,1252 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="大数据,Hadoop,">
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0">
+
+
+
+
+
+
+<meta name="description" content="背景近年来大数据BigData、人工智能AI、物联网Iot等行业发展迅猛，很多人都想要从事大数据技术开发工作，但是，请问要怎么做，路线是什么？从哪里开始学？学哪些？这是一个大问题。对于我自己来说，最近也在学一些大数据开发相关的技术，所以之前整理了一份《大数据技术学习路线》，希望对你有所帮助。">
+<meta name="keywords" content="大数据,Hadoop">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大数据技术学习路线">
+<meta property="og:url" content="http://yoursite.com/2017/06/23/my-post2/index.html">
+<meta property="og:site_name" content="Think Different">
+<meta property="og:description" content="背景近年来大数据BigData、人工智能AI、物联网Iot等行业发展迅猛，很多人都想要从事大数据技术开发工作，但是，请问要怎么做，路线是什么？从哪里开始学？学哪些？这是一个大问题。对于我自己来说，最近也在学一些大数据开发相关的技术，所以之前整理了一份《大数据技术学习路线》，希望对你有所帮助。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-18T14:32:26.626Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大数据技术学习路线">
+<meta name="twitter:description" content="背景近年来大数据BigData、人工智能AI、物联网Iot等行业发展迅猛，很多人都想要从事大数据技术开发工作，但是，请问要怎么做，路线是什么？从哪里开始学？学哪些？这是一个大问题。对于我自己来说，最近也在学一些大数据开发相关的技术，所以之前整理了一份《大数据技术学习路线》，希望对你有所帮助。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/06/23/my-post2/">
+
+
+
+
+
+  <title> 大数据技术学习路线 | Think Different </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Think Different</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">享受编程和技术所带来的快乐</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/23/my-post2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="贺敏（Minbo He）">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Think Different">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                大数据技术学习路线
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-23T15:24:20+01:00">
+                2017-06-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/大数据/" itemprop="url" rel="index">
+                    <span itemprop="name">大数据</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">被围观
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>近年来大数据BigData、人工智能AI、物联网Iot等行业发展迅猛，很多人都想要从事大数据技术开发工作，但是，请问要<code>怎么做</code>，<code>路线是什么？从哪里开始学？学哪些？</code>这是一个大问题。对于我自己来说，最近也在学一些大数据开发相关的技术，所以之前整理了一份<code>《大数据技术学习路线》</code>，希望对你有所帮助。</p>
+<a id="more"></a>
+<h2 id="学习规划"><a href="#学习规划" class="headerlink" title="学习规划"></a>学习规划</h2><p>总共分为五大部分，分别是：</p>
+<ul>
+<li>大数据技术基础</li>
+<li>离线计算Hadoop</li>
+<li>流式计算Storm</li>
+<li>内存计算Spark</li>
+<li>机器学习算法</li>
+</ul>
+<p>目前我学完了约60%的内容，但还有很多需要多实践、和深研的地方，我也在继续学习，和摸索当中。希望你早日能成为大数据技术开发中的一员，然后大家一起学习，和技术交流。</p>
+<h2 id="技术说明"><a href="#技术说明" class="headerlink" title="技术说明"></a>技术说明</h2><p>这里我只列举了<code>技术点</code>，给你提供了一个学习方向，具体实现内容可以借助网络去学习了，相信这方面你应该懂得了如何借助网络力量，然后进行自我学习了。</p>
+<h3 id="大数据技术基础"><a href="#大数据技术基础" class="headerlink" title="大数据技术基础"></a>大数据技术基础</h3><h4 id="linux操作基础"><a href="#linux操作基础" class="headerlink" title="linux操作基础"></a>linux操作基础</h4><ul>
+<li>linux系统简介与安装</li>
+<li>linux常用命令–文件操作</li>
+<li>linux常用命令–用户管理与权限</li>
+<li>linux常用命令–系统管理</li>
+<li>linux常用命令–免密登陆配置与网络管理</li>
+<li>linux上常用软件安装</li>
+<li>linux本地yum源配置及yum软件安装</li>
+<li>linux防火墙配置</li>
+<li>linux高级文本处理命令cut、sed、awk</li>
+<li>linux定时任务crontab</li>
+</ul>
+<h4 id="shell编程"><a href="#shell编程" class="headerlink" title="shell编程"></a>shell编程</h4><ul>
+<li>shell编程–基本语法</li>
+<li>shell编程–流程控制</li>
+<li>shell编程–函数</li>
+<li>shell编程–综合案例–自动化部署脚本</li>
+</ul>
+<h4 id="内存数据库redis"><a href="#内存数据库redis" class="headerlink" title="内存数据库redis"></a>内存数据库redis</h4><ul>
+<li>redis和nosql简介</li>
+<li>redis客户端连接</li>
+<li>redis的string类型数据结构操作及应用-对象缓存</li>
+<li>redis的list类型数据结构操作及应用案例-任务调度队列</li>
+<li>redis的hash及set数据结构操作及应用案例-购物车</li>
+<li>redis的sortedset数据结构操作及应用案例-排行榜</li>
+</ul>
+<h4 id="布式协调服务zookeeper"><a href="#布式协调服务zookeeper" class="headerlink" title="布式协调服务zookeeper"></a>布式协调服务zookeeper</h4><ul>
+<li>zookeeper简介及应用场景</li>
+<li>zookeeper集群安装部署</li>
+<li>zookeeper的数据节点与命令行操作</li>
+<li>zookeeper的java客户端基本操作及事件监听</li>
+<li>zookeeper核心机制及数据节点</li>
+<li>zookeeper应用案例–分布式共享资源锁</li>
+<li>zookeeper应用案例–服务器上下线动态感知</li>
+<li>zookeeper的数据一致性原理及leader选举机制</li>
+</ul>
+<h4 id="java高级特性增强"><a href="#java高级特性增强" class="headerlink" title="java高级特性增强"></a>java高级特性增强</h4><ul>
+<li>Java多线程基本知识</li>
+<li>Java同步关键词详解</li>
+<li>java并发包线程池及在开源软件中的应用</li>
+<li>Java并发包消息队里及在开源软件中的应用</li>
+<li>Java JMS技术</li>
+<li>Java动态代理反射</li>
+</ul>
+<h4 id="轻量级RPC框架开发"><a href="#轻量级RPC框架开发" class="headerlink" title="轻量级RPC框架开发"></a>轻量级RPC框架开发</h4><ul>
+<li>RPC原理学习</li>
+<li>Nio原理学习</li>
+<li>Netty常用API学习</li>
+<li>轻量级RPC框架需求分析及原理分析</li>
+<li>轻量级RPC框架开发</li>
+</ul>
+<h3 id="离线计算Hadoop"><a href="#离线计算Hadoop" class="headerlink" title="离线计算Hadoop"></a>离线计算Hadoop</h3><h4 id="hadoop快速入门"><a href="#hadoop快速入门" class="headerlink" title="hadoop快速入门"></a>hadoop快速入门</h4><ul>
+<li>hadoop背景介绍</li>
+<li>分布式系统概述</li>
+<li>离线数据分析流程介绍</li>
+<li>集群搭建</li>
+<li>集群使用初步</li>
+</ul>
+<h4 id="HDFS增强"><a href="#HDFS增强" class="headerlink" title="HDFS增强"></a>HDFS增强</h4><ul>
+<li>HDFS的概念和特性</li>
+<li>HDFS的shell(命令行客户端)操作</li>
+<li>HDFS的工作机制</li>
+<li>NAMENODE的工作机制</li>
+<li>java的api操作</li>
+<li>案例1：开发shell采集脚本</li>
+</ul>
+<h4 id="MAPREDUCE详解"><a href="#MAPREDUCE详解" class="headerlink" title="MAPREDUCE详解"></a>MAPREDUCE详解</h4><ul>
+<li>自定义hadoop的RPC框架</li>
+<li>Mapreduce编程规范及示例编写</li>
+<li>Mapreduce程序运行模式及debug方法</li>
+<li>mapreduce程序运行模式的内在机理</li>
+<li>mapreduce运算框架的主体工作流程</li>
+<li>自定义对象的序列化方法</li>
+<li>MapReduce编程案例</li>
+</ul>
+<h4 id="MAPREDUCE增强"><a href="#MAPREDUCE增强" class="headerlink" title="MAPREDUCE增强"></a>MAPREDUCE增强</h4><ul>
+<li>Mapreduce排序</li>
+<li>自定义partitioner</li>
+<li>Mapreduce的combiner</li>
+<li>mapreduce工作机制详解</li>
+</ul>
+<h4 id="MAPREDUCE实战"><a href="#MAPREDUCE实战" class="headerlink" title="MAPREDUCE实战"></a>MAPREDUCE实战</h4><ul>
+<li>maptask并行度机制-文件切片</li>
+<li>maptask并行度设置</li>
+<li>倒排索引</li>
+<li>共同好友</li>
+</ul>
+<h4 id="federation介绍和hive使用"><a href="#federation介绍和hive使用" class="headerlink" title="federation介绍和hive使用"></a>federation介绍和hive使用</h4><ul>
+<li>Hadoop的HA机制</li>
+<li>HA集群的安装部署</li>
+<li>集群运维测试之Datanode动态上下线</li>
+<li>集群运维测试之Namenode状态切换管理</li>
+<li>集群运维测试之数据块的balance</li>
+<li>HA下HDFS-API变化</li>
+<li>hive简介</li>
+<li>hive架构</li>
+<li>hive安装部署</li>
+<li>hvie初使用</li>
+</ul>
+<h4 id="hive增强和flume介绍"><a href="#hive增强和flume介绍" class="headerlink" title="hive增强和flume介绍"></a>hive增强和flume介绍</h4><ul>
+<li>HQL-DDL基本语法</li>
+<li>HQL-DML基本语法</li>
+<li>HIVE的join</li>
+<li>HIVE 参数配置</li>
+<li>HIVE 自定义函数和Transform</li>
+<li>HIVE 执行HQL的实例分析</li>
+<li>HIVE最佳实践注意点</li>
+<li>HIVE优化策略</li>
+<li>HIVE实战案例</li>
+<li>Flume介绍</li>
+<li>Flume的安装部署</li>
+<li>案例：采集目录到HDFS</li>
+<li>案例：采集文件到HDFS</li>
+</ul>
+<h3 id="流式计算Storm"><a href="#流式计算Storm" class="headerlink" title="流式计算Storm"></a>流式计算Storm</h3><h4 id="Storm从入门到精通"><a href="#Storm从入门到精通" class="headerlink" title="Storm从入门到精通"></a>Storm从入门到精通</h4><ul>
+<li>Storm是什么</li>
+<li>Storm架构分析</li>
+<li>Storm架构分析</li>
+<li>Storm编程模型、Tuple源码、并发度分析</li>
+<li>Storm WordCount案例及常用Api分析</li>
+<li>Storm集群部署实战</li>
+<li>Storm+Kafka+Redis业务指标计算</li>
+<li>Storm源码下载编译</li>
+<li>Strom集群启动及源码分析</li>
+<li>Storm任务提交及源码分析</li>
+<li>Storm数据发送流程分析</li>
+<li>Storm通信机制分析</li>
+<li>Storm消息容错机制及源码分析</li>
+<li>Storm多stream项目分析</li>
+<li>编写自己的流式任务执行框架</li>
+</ul>
+<h4 id="Storm上下游及架构集成"><a href="#Storm上下游及架构集成" class="headerlink" title="Storm上下游及架构集成"></a>Storm上下游及架构集成</h4><ul>
+<li>消息队列是什么</li>
+<li>Kakfa核心组件</li>
+<li>Kafka集群部署实战及常用命令</li>
+<li>Kafka配置文件梳理</li>
+<li>Kakfa JavaApi学习</li>
+<li>Kafka文件存储机制分析</li>
+<li>Redis基础及单机环境部署</li>
+<li>Redis数据结构及典型案例</li>
+<li>Flume快速入门</li>
+<li>Flume+Kafka+Storm+Redis整合</li>
+</ul>
+<h3 id="内存计算Spark"><a href="#内存计算Spark" class="headerlink" title="内存计算Spark"></a>内存计算Spark</h3><h4 id="scala编程"><a href="#scala编程" class="headerlink" title="scala编程"></a>scala编程</h4><ul>
+<li>scala编程介绍</li>
+<li>scala相关软件安装</li>
+<li>scala基础语法</li>
+<li>scala方法和函数</li>
+<li>scala函数式编程特点</li>
+<li>scala数组和集合</li>
+<li>scala编程练习（单机版WordCount）</li>
+<li>scala面向对象</li>
+<li>scala模式匹配</li>
+<li>actor编程介绍</li>
+<li>option和偏函数</li>
+<li>实战：actor的并发WordCount</li>
+<li>柯里化</li>
+<li>隐式转换</li>
+</ul>
+<h4 id="AKKA与RPC"><a href="#AKKA与RPC" class="headerlink" title="AKKA与RPC"></a>AKKA与RPC</h4><ul>
+<li>Akka并发编程框架</li>
+<li>实战：RPC编程实战</li>
+</ul>
+<h4 id="Spark快速入门"><a href="#Spark快速入门" class="headerlink" title="Spark快速入门"></a>Spark快速入门</h4><ul>
+<li>spark介绍</li>
+<li>spark环境搭建</li>
+<li>RDD简介</li>
+<li>RDD的转换和动作</li>
+<li>实战：RDD综合练习</li>
+<li>RDD高级算子</li>
+<li>自定义Partitioner</li>
+<li>实战：网站访问次数</li>
+<li>广播变量</li>
+<li>实战：根据IP计算归属地</li>
+<li>自定义排序</li>
+<li>利用JDBC RDD实现数据导入导出</li>
+<li>WorldCount执行流程详解</li>
+</ul>
+<h4 id="RDD详解"><a href="#RDD详解" class="headerlink" title="RDD详解"></a>RDD详解</h4><ul>
+<li>RDD依赖关系</li>
+<li>RDD缓存机制</li>
+<li>RDD的Checkpoint检查点机制</li>
+<li>Spark任务执行过程分析</li>
+<li>RDD的Stage划分</li>
+</ul>
+<h4 id="Spark-Sql应用"><a href="#Spark-Sql应用" class="headerlink" title="Spark-Sql应用"></a>Spark-Sql应用</h4><ul>
+<li>Spark-SQL</li>
+<li>Spark结合Hive</li>
+<li>DataFrame</li>
+<li>实战：Spark-SQL和DataFrame案例</li>
+</ul>
+<h4 id="SparkStreaming应用实战"><a href="#SparkStreaming应用实战" class="headerlink" title="SparkStreaming应用实战"></a>SparkStreaming应用实战</h4><ul>
+<li>Spark-Streaming简介</li>
+<li>Spark-Streaming编程</li>
+<li>实战：StageFulWordCount</li>
+<li>Flume结合Spark Streaming</li>
+<li>Kafka结合Spark Streaming</li>
+<li>窗口函数</li>
+<li>ELK技术栈介绍</li>
+<li>ElasticSearch安装和使用</li>
+<li>Storm架构分析</li>
+<li>Storm编程模型、Tuple源码、并发度分析</li>
+<li>Storm WordCount案例及常用Api分析</li>
+</ul>
+<h4 id="Spark核心源码解析"><a href="#Spark核心源码解析" class="headerlink" title="Spark核心源码解析"></a>Spark核心源码解析</h4><ul>
+<li>Spark源码编译</li>
+<li>Spark远程debug</li>
+<li>Spark任务提交行流程源码分析</li>
+<li>Spark通信流程源码分析</li>
+<li>SparkContext创建过程源码分析</li>
+<li>DriverActor和ClientActor通信过程源码分析</li>
+<li>Worker启动Executor过程源码分析</li>
+<li>Executor向DriverActor注册过程源码分析</li>
+<li>Executor向Driver注册过程源码分析</li>
+<li>DAGScheduler和TaskScheduler源码分析</li>
+<li>Shuffle过程源码分析</li>
+<li>Task执行过程源码分析</li>
+</ul>
+<h3 id="机器学习算法"><a href="#机器学习算法" class="headerlink" title="机器学习算法"></a>机器学习算法</h3><h4 id="python及numpy库"><a href="#python及numpy库" class="headerlink" title="python及numpy库"></a>python及numpy库</h4><ul>
+<li>机器学习简介</li>
+<li>机器学习与python</li>
+<li>python语言–快速入门</li>
+<li>python语言–数据类型详解</li>
+<li>python语言–流程控制语句</li>
+<li>python语言–函数使用</li>
+<li>python语言–模块和包</li>
+<li>phthon语言–面向对象</li>
+<li>python机器学习算法库–numpy</li>
+<li>机器学习必备数学知识–概率论</li>
+</ul>
+<h4 id="常用算法实现"><a href="#常用算法实现" class="headerlink" title="常用算法实现"></a>常用算法实现</h4><ul>
+<li>knn分类算法–算法原理</li>
+<li>knn分类算法–代码实现</li>
+<li>knn分类算法–手写字识别案例</li>
+<li>lineage回归分类算法–算法原理</li>
+<li>lineage回归分类算法–算法实现及demo</li>
+<li>朴素贝叶斯分类算法–算法原理</li>
+<li>朴素贝叶斯分类算法–算法实现</li>
+<li>朴素贝叶斯分类算法–垃圾邮件识别应用案例</li>
+<li>kmeans聚类算法–算法原理</li>
+<li>kmeans聚类算法–算法实现</li>
+<li>kmeans聚类算法–地理位置聚类应用</li>
+<li>决策树分类算法–算法原理</li>
+<li>决策树分类算法–算法实现</li>
+</ul>
+<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p> 看完有信心能坚持学习吗？如果你的答案是肯定的，那就当下开始行动吧！Fighting~<br> 推荐两个相关的学习博客地址：</p>
+<ul>
+<li><a href="http://blog.csdn.net/hemin1003/article/category/6985523/" target="_blank" rel="noopener">Hadoop学习教程</a></li>
+<li><a href="http://blog.fens.me/series-hadoop-family/" target="_blank" rel="noopener">Hadoop家族系列文章</a></li>
+<li><a href="http://www.powerxing.com/tag/hadoop/" target="_blank" rel="noopener">Hadoop使用教程</a></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/大数据/" rel="tag"># 大数据</a>
+          
+            <a href="/tags/Hadoop/" rel="tag"># Hadoop</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/20/my-post1/" rel="next" title="我的个人博客系统终于实施落地了">
+                <i class="fa fa-chevron-left"></i> 我的个人博客系统终于实施落地了
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/30/my-post3/" rel="prev" title="到底什么是微服务？">
+                到底什么是微服务？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="贺敏（Minbo He）">
+          <p class="site-author-name" itemprop="name">贺敏（Minbo He）</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/hemin1003" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://blog.csdn.net/hemin1003" target="_blank" title="CSDN">
+                  
+                    <i class="fa fa-fw fa-bandcamp"></i>
+                  
+                  CSDN
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://book.douban.com/people/hemin1003/" target="_blank" title="豆瓣书单">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  豆瓣书单
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/hemin1003/activities" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/hemin1003" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学习规划"><span class="nav-number">2.</span> <span class="nav-text">学习规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术说明"><span class="nav-number">3.</span> <span class="nav-text">技术说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#大数据技术基础"><span class="nav-number">3.1.</span> <span class="nav-text">大数据技术基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#linux操作基础"><span class="nav-number">3.1.1.</span> <span class="nav-text">linux操作基础</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#shell编程"><span class="nav-number">3.1.2.</span> <span class="nav-text">shell编程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内存数据库redis"><span class="nav-number">3.1.3.</span> <span class="nav-text">内存数据库redis</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#布式协调服务zookeeper"><span class="nav-number">3.1.4.</span> <span class="nav-text">布式协调服务zookeeper</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#java高级特性增强"><span class="nav-number">3.1.5.</span> <span class="nav-text">java高级特性增强</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#轻量级RPC框架开发"><span class="nav-number">3.1.6.</span> <span class="nav-text">轻量级RPC框架开发</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#离线计算Hadoop"><span class="nav-number">3.2.</span> <span class="nav-text">离线计算Hadoop</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hadoop快速入门"><span class="nav-number">3.2.1.</span> <span class="nav-text">hadoop快速入门</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HDFS增强"><span class="nav-number">3.2.2.</span> <span class="nav-text">HDFS增强</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MAPREDUCE详解"><span class="nav-number">3.2.3.</span> <span class="nav-text">MAPREDUCE详解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MAPREDUCE增强"><span class="nav-number">3.2.4.</span> <span class="nav-text">MAPREDUCE增强</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MAPREDUCE实战"><span class="nav-number">3.2.5.</span> <span class="nav-text">MAPREDUCE实战</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#federation介绍和hive使用"><span class="nav-number">3.2.6.</span> <span class="nav-text">federation介绍和hive使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hive增强和flume介绍"><span class="nav-number">3.2.7.</span> <span class="nav-text">hive增强和flume介绍</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流式计算Storm"><span class="nav-number">3.3.</span> <span class="nav-text">流式计算Storm</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Storm从入门到精通"><span class="nav-number">3.3.1.</span> <span class="nav-text">Storm从入门到精通</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Storm上下游及架构集成"><span class="nav-number">3.3.2.</span> <span class="nav-text">Storm上下游及架构集成</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内存计算Spark"><span class="nav-number">3.4.</span> <span class="nav-text">内存计算Spark</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#scala编程"><span class="nav-number">3.4.1.</span> <span class="nav-text">scala编程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AKKA与RPC"><span class="nav-number">3.4.2.</span> <span class="nav-text">AKKA与RPC</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Spark快速入门"><span class="nav-number">3.4.3.</span> <span class="nav-text">Spark快速入门</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#RDD详解"><span class="nav-number">3.4.4.</span> <span class="nav-text">RDD详解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Spark-Sql应用"><span class="nav-number">3.4.5.</span> <span class="nav-text">Spark-Sql应用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SparkStreaming应用实战"><span class="nav-number">3.4.6.</span> <span class="nav-text">SparkStreaming应用实战</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Spark核心源码解析"><span class="nav-number">3.4.7.</span> <span class="nav-text">Spark核心源码解析</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#机器学习算法"><span class="nav-number">3.5.</span> <span class="nav-text">机器学习算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#python及numpy库"><span class="nav-number">3.5.1.</span> <span class="nav-text">python及numpy库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用算法实现"><span class="nav-number">3.5.2.</span> <span class="nav-text">常用算法实现</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾记"><span class="nav-number">4.</span> <span class="nav-text">尾记</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">贺敏（Minbo He）</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+    <span class="site-pv">
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
