@@ -35,7 +35,16 @@
   <div class="container sidebar-position-left page-home">
     <div class="headband"></div>
 
-    <object data="header.html"></object>
+<header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <script src="jquery.js"></script>
+    <script>
+    $(function(){
+      $("#DivContent").load("header.html");
+    });
+    </script>
+  </header>
+
+  <div id="DivContent"></div>
 
     <main id="main" class="main">
       <div class="main-inner">
