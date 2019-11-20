@@ -32,40 +32,7 @@
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="http://yoursite.com/uploads/s01.png">
 
-  <script type="text/javascript" id="hexo.configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {
-      root: '/',
-      scheme: 'Pisces',
-      sidebar: {
-        "position": "left",
-        "display": "post",
-        "offset": 12,
-        "offset_float": 0,
-        "b2t": false,
-        "scrollpercent": false
-      },
-      fancybox: true,
-      motion: true,
-      duoshuo: {
-        userId: '0',
-        author: '博主'
-      },
-      algolia: {
-        applicationID: '',
-        apiKey: '',
-        indexName: '',
-        hits: {
-          "per_page": 10
-        },
-        labels: {
-          "input_placeholder": "Search for Posts",
-          "hits_empty": "We didn't find any results for the search: ${query}",
-          "hits_stats": "${hits} results found in ${time} ms"
-        }
-      }
-    };
-  </script>
+  <script type="text/javascript" id="hexo.configurations" src="js/src/util/hexoConfig.js"></script>
 
   <link rel="canonical" href="http://yoursite.com/2019/09/01/my-post5/">
   <title> 【应用算法】信息流-推荐系统的去重策略</title>
@@ -484,7 +451,7 @@
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
   <script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
   <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-  <script type="text/javascript" src="/js/src/util/common.js"></script>
+  <script type="text/javascript" src="/js/src/util/search.js"></script>
 
 </body>
 
