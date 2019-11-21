@@ -263,7 +263,9 @@
           </div>
         </aside> -->
         <aside id="sidebar" class="sidebar"><div id="test" class="sidebar-inner"></div></aside>
-        <script src="/js/src/util/aside.js"></script>
+        <script >var aside = document.querySelector("link[rel = 'hello']").import;
+        var con_aside = aside.querySelector("section");
+        document.querySelector("#test").appendChild(con_aside.cloneNode(true));</script>
 
       </div>
     </main>
