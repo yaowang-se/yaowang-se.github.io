@@ -265,8 +265,8 @@
         <aside id="sidebar" class="sidebar"></aside>
         <script>
         var link = document.querySelector('link[rel="hello"]').import;
-        var el = link.querySelector('.div');
-        document.querySelector('.sidebar').appendChild(el.cloneNode(true));
+        var el = link.querySelector("#sidebar-inner");
+        document.querySelector("#sidebar").appendChild(el.cloneNode(true));
         </script>
 
       </div>
