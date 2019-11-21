@@ -29,27 +29,98 @@
 
   <link rel="canonical" href="http://yoursite.com/">
   <title>Coding Life</title>
-
-  <script src="/js/src/util/jquery.js"></script>
-  <script>
-  $(function(){
-    $("#DivContent").load("header.html");
-  });
-  </script>
-
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en-gb">
   <div class="container sidebar-position-left page-home">
     <div class="headband"></div>
 
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+        <div class="site-brand-wrapper">
+          <div class="site-meta ">
+            <div class="custom-logo-site-title">
+              <a href="/" class="brand" rel="start">
+                <span class="logo-line-before"><i></i></span>
+                <span class="site-title">Enjoy Coding</span>
+                <span class="logo-line-after"><i></i></span>
+              </a>
+            </div>
+          </div>
 
+          <div class="site-nav-toggle">
+            <button>
+              <span class="btn-bar"></span>
+              <span class="btn-bar"></span>
+              <span class="btn-bar"></span>
+            </button>
+          </div>
+        </div>
 
+        <nav class="site-nav">
+          <ul id="menu" class="menu">
+            <li class="menu-item menu-item-home">
+              <a href="/" rel="section">
+                <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+                Home
+              </a>
+            </li>
 
-     <div id="DivContent"></div>
+            <li class="menu-item menu-item-categories">
+              <a href="/categories" rel="section">
+                <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+                Categories
+              </a>
+            </li>
 
+            <li class="menu-item menu-item-archives">
+              <a href="/archives" rel="section">
+                <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+                Archive
+              </a>
+            </li>
 
+            <li class="menu-item menu-item-tags">
+              <a href="/tags" rel="section">
+                <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+                Sign
+              </a>
+            </li>
 
+            <li class="menu-item menu-item-about">
+              <a href="/about" rel="section">
+                <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+                About
+              </a>
+            </li>
+
+            <li class="menu-item menu-item-search">
+              <a href="javascript:;" class="popup-trigger">
+                <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+                Search
+              </a>
+            </li>
+          </ul>
+
+          <div class="site-search">
+            <div class="popup search-popup local-search-popup">
+              <div class="local-search-header clearfix">
+                <span class="search-icon">
+                  <i class="fa fa-search"></i>
+                </span>
+                <span class="popup-btn-close">
+                  <i class="fa fa-times-circle"></i>
+                </span>
+                <div class="local-search-input-wrapper">
+                  <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="Search..." spellcheck="false" type="text" id="local-search-input">
+                </div>
+              </div>
+              <div id="local-search-result"></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
 
     <main id="main" class="main">
@@ -217,91 +288,7 @@
                   <div class="post-eof"></div>
                 </footer>
               </article>
-
-              <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-                <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/22/my-post4/">
-                <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <meta itemprop="name" content="Yao Wang">
-                  <meta itemprop="description" content>
-                  <meta itemprop="image" content="/uploads/Ant.JPG">
-                </span>
-
-                <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                  <meta itemprop="name" content="Think Different">
-                </span>
-                <header class="post-header">
-                  <h2 class="post-title" itemprop="name headline">
-                    <a class="post-title-link" href="/2018/06/22/my-post4/" itemprop="url">
-                      2018年上半年阅读总结
-                    </a>
-                  </h2>
-
-                  <div class="post-meta">
-                    <span class="post-time">
-                      <span class="post-meta-item-icon">
-                        <i class="fa fa-calendar-o"></i>
-                      </span>
-                      <span class="post-meta-item-text">Post </span>
-                      <time title="Post" itemprop="dateCreated datePublished" datetime="2018-06-22T01:30:00+01:00">
-                        2018-06-22
-                      </time>
-                    </span>
-
-                    <span class="post-category">
-                      <span class="post-meta-divider">|</span>
-                      <span class="post-meta-item-icon">
-                        <i class="fa fa-folder-o"></i>
-                      </span>
-                      <span class="post-meta-item-text">Category </span>
-
-                      <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                        <a href="/categories/Artificial Intelligence/" itemprop="url" rel="index">
-                          <span itemprop="name">Artificial Intelligence</span>
-                        </a>
-                      </span>
-                      ,
-                      <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                        <a href="/categories/Artificial Intelligence/AI/" itemprop="url" rel="index">
-                          <span itemprop="name">AI</span>
-                        </a>
-                      </span>
-                      ,
-                      <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                        <a href="/categories/Artificial Intelligence/AI/Reading/" itemprop="url" rel="index">
-                          <span itemprop="name">Reading</span>
-                        </a>
-                      </span>
-                      ,
-                      <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                        <a href="/categories/Artificial Intelligence/AI/Reading/Architect/" itemprop="url" rel="index">
-                          <span itemprop="name">Architect</span>
-                        </a>
-                      </span>
-                    </span>
-                  </div>
-                </header>
-
-                <div class="post-body han-init-context" itemprop="articleBody">
-                  <blockquote>
-                    <p>上半年看了一些书，简单总结一下</p>
-                  </blockquote>
-                  <h2 id="坚持阅读"><a href="#坚持阅读" class="headerlink" title="坚持阅读"></a>坚持阅读</h2>
-                  <p>古人云：“活到老，学到老。”
-                    IT技术发展太快，行业日新月异，作为最苦逼职业之一，软件工程师，只能不停的学习、深造、提升。总之，学不可以已，所以，保持良好的心态，持之以恒，这个很重要。</p>
-                  <p>以下是今年上半年阅读的相关书籍，这里分享七本：</p>
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/2018/06/22/my-post4/#more" rel="contents">
-                      Read more &raquo;
-                    </a>
-                  </div>
-                </div>
-
-                <footer class="post-footer">
-                  <div class="post-eof"></div>
-                </footer>
-              </article>
-
+              
             </section>
           </div>
         </div>
