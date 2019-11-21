@@ -1,6 +1,6 @@
-var post = document.querySelector("link[rel = 'import']").import;
-var con = post.querySelector("div");
-document.querySelector("#sidebar").appendChild(con.cloneNode(true));
+var post1 = document.querySelector("link[rel = 'import']").import;
+var con1 = post1.querySelector("div");
+document.querySelector("#sidebar").appendChild(con1.cloneNode(true));
 
-var clone = document.importNode(con,true)
-document.querySelector("#sidebar").appendChild(clone)
+var clone1 = document.importNode(con1,true)
+document.querySelector("#sidebar").appendChild(clone1)
