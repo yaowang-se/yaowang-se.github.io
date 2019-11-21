@@ -29,15 +29,14 @@
   <link rel="canonical" href="http://yoursite.com/">
   <title>Coding Life</title>
 
-  <link rel="import" href="header.html" />
-  <link rel="import_aside" href="aside.html" />
+  <link rel="import" href="header.html"/>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en-gb" id="app" ng-app="">
   <div class="container sidebar-position-left page-home">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"></header>
+    <div id="common"></div>
     <script src="/js/src/util/header.js"></script>
 
     <main id="main" class="main">
@@ -218,9 +217,6 @@
             </div>
           </div>
         </div>
-
-        <aside id="sidebar" class="sidebar"></aside>
-        <script src="/js/src/util/aside.js"></script>
 
       </div>
     </main>
