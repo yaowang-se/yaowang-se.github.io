@@ -36,14 +36,14 @@
   <div class="container sidebar-position-left page-home">
     <div class="headband"></div>
 
-<div id = "content"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"></header>
     <script>
         var post = document.querySelector("link[rel = 'import']").import;
         var con = post.querySelector("div");
-        document.querySelector("#content").appendChild(con.cloneNode(true));
+        document.querySelector("#header").appendChild(con.cloneNode(true));
 
         var clone = document.importNode(con,true)
-        document.querySelector("#content").appendChild(clone)
+        document.querySelector("#header").appendChild(clone)
     </script>
 
 
