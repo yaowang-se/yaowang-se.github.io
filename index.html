@@ -28,13 +28,23 @@
   <script type="text/javascript" id="hexo.configurations" src="/js/src/util/hexoConfig.js"></script>
   <link rel="canonical" href="http://yoursite.com/">
   <title>Coding Life</title>
+
+  <link rel = "import" href = "header.html"/>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en-gb" id="app" ng-app="">
   <div class="container sidebar-position-left page-home">
     <div class="headband"></div>
 
-<script>$("body").load("header.html"); </script>
+<div id = "content"></div>
+    <script>
+        var post = document.querySelector("link[rel = 'import']").import;
+        var con = post.querySelector("div");
+        document.querySelector("#content").appendChild(con.cloneNode(true));
+
+        var clone = document.importNode(con,true)
+        document.querySelector("#content").appendChild(clone)
+    </script>
 
 
     <!-- <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
