@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html class="theme-next pisces use-motion" lang="en-gb">
 
 <head>
@@ -119,6 +120,7 @@
         </nav>
       </div>
     </header>
+    </head>
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -126,7 +128,6 @@
 
           <div id="content" class="content">
             <section id="posts" class="posts-expand">
-
               <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
                 <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/01/my-post5/">
                 <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -201,6 +202,7 @@
                   <footer class="post-footer">
                     <div class="post-eof"></div>
                   </footer>
+                </div>
               </article>
 
               <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
@@ -263,6 +265,7 @@
                         </a>
                       </span>
                     </span>
+
                   </div>
                 </header>
 
@@ -289,66 +292,68 @@
 
             </section>
           </div>
-        </div>
 
-        <div class="sidebar-toggle">
-          <div class="sidebar-toggle-line-wrap">
-            <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-            <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-            <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+          <div class="sidebar-toggle">
+            <div class="sidebar-toggle-line-wrap">
+              <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+              <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+              <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+            </div>
           </div>
+
+          <aside id="sidebar" class="sidebar">
+            <div class="sidebar-inner">
+              <section class="site-overview sidebar-panel sidebar-panel-active">
+                <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <img class="site-author-image" itemprop="image" src="/uploads/Ant.JPG" alt="Ant">
+                  <p class="site-author-name" itemprop="name">Ant</p>
+                  <p class="site-description motion-element" itemprop="description"></p>
+                </div>
+
+                <nav class="site-state motion-element">
+                  <div class="site-state-item site-state-posts">
+                    <a href="/archives">
+                      <span class="site-state-item-count">6</span>
+                      <span class="site-state-item-name">Blog</span>
+                    </a>
+                  </div>
+
+                  <div class="site-state-item site-state-categories">
+                    <a href="/categories/index.html">
+                      <span class="site-state-item-count">11</span>
+                      <span class="site-state-item-name">Categories </span>
+                    </a>
+                  </div>
+
+                  <div class="site-state-item site-state-tags">
+                    <a href="/tags/index.html">
+                      <span class="site-state-item-count">14</span>
+                      <span class="site-state-item-name">Sign</span>
+                    </a>
+                  </div>
+                </nav>
+
+                <div class="links-of-author motion-element">
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yaowang-se" target="_blank" title="GitHub">
+                      <i class="fa fa-fw fa-github"></i>
+                      GitHub
+                    </a>
+                  </span>
+                </div>
+
+              </section>
+            </div>
+          </aside>
+
         </div>
-
-        <aside id="sidebar" class="sidebar">
-          <div class="sidebar-inner">
-            <section class="site-overview sidebar-panel sidebar-panel-active">
-              <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <img class="site-author-image" itemprop="image" src="/uploads/Ant.JPG" alt="Ant">
-                <p class="site-author-name" itemprop="name">Ant</p>
-                <p class="site-description motion-element" itemprop="description"></p>
-              </div>
-
-              <nav class="site-state motion-element">
-                <div class="site-state-item site-state-posts">
-                  <a href="/archives">
-                    <span class="site-state-item-count">6</span>
-                    <span class="site-state-item-name">Blog</span>
-                  </a>
-                </div>
-
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    <span class="site-state-item-count">11</span>
-                    <span class="site-state-item-name">Categories </span>
-                  </a>
-                </div>
-
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    <span class="site-state-item-count">14</span>
-                    <span class="site-state-item-name">Sign</span>
-                  </a>
-                </div>
-              </nav>
-
-              <div class="links-of-author motion-element">
-                <span class="links-of-author-item">
-                  <a href="https://github.com/yaowang-se" target="_blank" title="GitHub">
-                    <i class="fa fa-fw fa-github"></i>
-                    GitHub
-                  </a>
-                </span>
-              </div>
-            </section>
-          </div>
-        </aside>
-        
       </div>
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-      </div>
+    </main>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
-  </main>
 
   <script type="text/javascript">
     if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
@@ -369,7 +374,6 @@
   <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
   <script type="text/javascript" src="/js/src/util/search.js"></script>
 
-  </div>
 </body>
 
 </html>
