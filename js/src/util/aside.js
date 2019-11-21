@@ -1,6 +1,6 @@
 var aside = document.querySelector("link[rel = 'import_aside']").import;
 var con_aside = aside.querySelector("div");
-document.querySelector("#sidebar").appendChild(con_aside.cloneNode(true));
+document.querySelector("#aside").appendChild(con_aside.cloneNode(true));
 
 var clone_aside = document.importNode(con_aside,true)
-document.querySelector("#sidebar").appendChild(clone_aside)
+document.querySelector("#aside").appendChild(clone_aside)
