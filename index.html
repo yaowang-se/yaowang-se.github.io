@@ -29,22 +29,25 @@
 
   <link rel="canonical" href="http://yoursite.com/">
   <title>Coding Life</title>
+
+  <script src="/js/src/util/jquery.js"></script>
+  <script>
+  $(function(){
+    $("#DivContent").load("header.html");
+  });
+  </script>
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en-gb">
   <div class="container sidebar-position-left page-home">
     <div class="headband"></div>
 
-    <script src="/js/src/util/jquery.js"></script>
-    <script>
-    $(function(){
-      $("#DivContent").load("header.html");
-    });
-    </script>
 
-  <body>
+
+
      <div id="DivContent"></div>
-  </body>
+
 
 
 
