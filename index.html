@@ -30,7 +30,14 @@
   <title>Coding Life</title>
 
   <link rel="import" href="header.html"/>
-  <link rel="hello" href="aside.html"/>
+  <!-- <link rel="hello" href="aside.html"/> -->
+
+  <script src="/js/src/util/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#sidebar").load("aside.html");
+    });
+    </script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en-gb">
@@ -263,11 +270,6 @@
           </div>
         </aside> -->
         <aside id="sidebar" class="sidebar"></aside>
-        <script>
-        var content = document.querySelector('link[rel="hello"]').import;
-        var el = link.querySelector("div");
-        document.querySelector("#aside").appendChild(content.cloneNode(true));
-        </script>
 
       </div>
     </main>
