@@ -108,17 +108,17 @@
                   </blockquote>
                   <h2>Segment-Lock</h2>
                   <p>HashMap is not synchronized and not thread safe.<br>
-                     HashTable is synchronized to ensure thread safe, but not efficient</p>
+                     HashTable is synchronized and ensure thread safe, but not efficient</p>
                   <a id="more"></a>
-                  <p>ConcurrentHashMap is a segment-lock.When one thread is operating one segment, other segments are still available.</p>
+                  <p>ConcurrentHashMap is a segment-lock. If one thread is operating one segment, other segments are still available.</p>
                   <p>Some methods have to use across-segment, such as size() and containsValue() which will lock all segment, and then release all locks by sequence.</p>
                   <p><img src="/uploads/ConcurrentHashMap.jpg" alt="fig"></p>
                   <p>As the figure above, ConcurrentHashMap consists of Segment array and HashEntry array.
                     Segment uses ReentrantLock and play an import role in ConcurrentHashMap.
                     HashEntry is used to store Key-Value data.</p>
-                  <p>A ConcurrentHashMap contains a Segment array. Segment is similar to the HashMap. It's a array-LinkedList structure.<br>
-                    A Segment contains a HashEntry array.<br>
-                    A HashEntry is LinkedList element.<br>
+                  <p>ConcurrentHashMap contains a Segment array. Segment is similar to the HashMap. It's a array-LinkedList structure.<br>
+                     Segment contains a HashEntry array.<br>
+                     HashEntry is a element of LinkedList.<br>
                     The Segment lock protects the HashEntry array. Only after getting the segment lock, the HashEntry can be update.</p>
                 </div>
 
