@@ -77,4 +77,13 @@
         <tag>预热</tag>
       </tags>
   </entry>
+
+  <entry>
+    <title><![CDATA[ConcurrentHashMap]]></title>
+    <url>%2F2016%2F10%2F01%2Fpost1%2F</url>
+    <content type="text"><![CDATA[ConcurrentHashMap]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+  </entry>
 </search>
