@@ -193,8 +193,8 @@
                     the update in progress per segment would be no more than one most of time.<br>
                   That's why constructors, compared to HashMap, provides the extra concurrencyLevel argument to
                   control the number of estimated threads to use:<br>
-                      public ConcurrentHashMap()<br>
-                      public ConcurrentHashMap(int initialCapacity, float loadFactor, int concurrencyLevel)<br>
+                      &nbsp public ConcurrentHashMap()<br>
+                      &nbsp public ConcurrentHashMap(int initialCapacity, float loadFactor, int concurrencyLevel)<br>
                   The other two arguments: initialCapacity and loadFactor worked quite the same as HashMap.<br>
                   However, since Java 8, the constructors are only present for backward compatibility: the parameters can only affect
                   the initial size of the map.<br></p>
@@ -206,23 +206,23 @@
                   Most APIs provided by ConcurrentMap does not allow null key or value, for example:<br>
                   @Test(expected = NullPointerException.class)<br>
                   public void givenConcurrentHashMap_whenPutWithNullKey_thenThrowsNPE() {<br>
-                      concurrentMap.put(null, new Object());<br>
+                      &nbsp concurrentMap.put(null, new Object());<br>
                   }<br>
 
                   @Test(expected = NullPointerException.class)<br>
                   public void givenConcurrentHashMap_whenPutNullValue_thenThrowsNPE() {<br>
-                      concurrentMap.put("test", null);<br>
+                      &nbsp concurrentMap.put("test", null);<br>
                   }<br>
                   However, for compute* and merge actions, the computed value can be null, which
                   indicates the key-value mapping is removed if present or remains absent if
                   previously absent.<br>
                   @Test<br>
                   public void givenKeyPresent_whenComputeRemappingNull_thenMappingRemoved() {<br>
-                      Object oldValue = new Object();<br>
-                      concurrentMap.put("test", oldValue);<br>
-                      concurrentMap.compute("test", (s, o) -> null);<br>
+                      &nbsp Object oldValue = new Object();<br>
+                      &nbsp concurrentMap.put("test", oldValue);<br>
+                      &nbsp concurrentMap.compute("test", (s, o) -> null);<br>
 
-                      assertNull(concurrentMap.get("test"));<br>
+                      &nbsp assertNull(concurrentMap.get("test"));<br>
                   }</p>
                 </div>
 
