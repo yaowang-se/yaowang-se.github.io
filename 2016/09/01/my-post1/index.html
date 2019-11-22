@@ -107,28 +107,25 @@
                     <p>ConcurrentHashMap (before 1.7) contains 3 entity classes: ConcurrentHashMap, Segment, HashEntry.</p>
                   </blockquote>
                   <h2>Segment-Lock</h2>
-                  <p>HashMap is not synchronized, not thread safe.<br>HashTable uses synchronized to ensure thread safe, but not efficient</p>
+                  <p>HashMap is not synchronized and not thread safe.<br>
+                     HashTable is synchronized to ensure thread safe, but not efficient</p>
                   <a id="more"></a>
-                  <p>ConcurrentHashMap uses segment-lock method. First, storing the data segment by segment and then locking each segment.
-                    When one thread is using one segment, other segments are available to other threads.</p>
-                  <p>Some methods need to use accrose-segment, such as size() and containsValue(). Now it needs to lock all segment, after that release all locks by sequence.</p>
-                  <p><img src="../../../../uploads/s01.png" alt="first"></p>
-                  <p>ConcurrentHashMap consists of Segment array structure and HashEntry array structure.
+                  <p>ConcurrentHashMap is a segment-lock.When one thread is operating one segment, other segments are still available.</p>
+                  <p>Some methods have to use across-segment, such as size() and containsValue() which will lock all segment, and then release all locks by sequence.</p>
+                  <p><img src="../../../../uploads/ConcurrentHashMap.JPG" alt="first"></p>
+                  <p>As the figure above, ConcurrentHashMap consists of Segment array and HashEntry array.
                     Segment uses ReentrantLock and play an import role in ConcurrentHashMap.
                     HashEntry is used to store Key-Value data.</p>
-                  <p>A ConcurrentHashMap contains a Segment array. Segment is similar to the HashMap. It's a array-LinkedList structure.
-                    A Segment contains a HashEntry array.
-                    A HashEntry is LinkedList element.
-                    The Segment lock protects the HashEntry array. If the HashEntry needs to be update, the Segment lock must be got first.</p>
+                  <p>A ConcurrentHashMap contains a Segment array. Segment is similar to the HashMap. It's a array-LinkedList structure.<br>
+                    A Segment contains a HashEntry array.<br>
+                    A HashEntry is LinkedList element.<br>
+                    The Segment lock protects the HashEntry array. Only geting the segment lock, the HashEntry can be update.</p>
                 </div>
 
                 <footer class="post-footer">
                   <div class="post-tags">
-                    <a href="/tags/Information/" rel="tag"># Information</a>
-                    <a href="/tags/Recommender System/" rel="tag"># Recommender System</a>
-                    <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
+                    <a href="/tags/Java/" rel="tag"># Java</a>
                   </div>
-
 
                   <div class="post-nav">
                     <div class="post-nav-next post-nav-item">
