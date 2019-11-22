@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next pisces use-motion" lang="en-bg">
+<html class="theme-next pisces use-motion" lang="en-gb">
 <head>
   <meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
@@ -14,33 +14,112 @@
   <meta name="keywords" content="">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0">
   <meta name="description" content="">
+  <meta name="keywords" content="">
   <meta property="og:type" content="article">
   <meta property="og:title" content="">
-  <meta property="og:url" content="http://yoursite.com/2019/11/18/hello-world/index.html">
+  <meta property="og:url" content="http://yoursite.com/2016/10/01/post1/index.html">
   <meta property="og:site_name" content="">
   <meta property="og:description" content="">
   <meta property="og:locale" content="en-gb">
-  <meta property="og:updated_time" content="2019-11-18T15:14:14.679Z">
+  <meta property="og:image" content="">
+  <meta property="og:updated_time" content="">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="">
   <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
   <script type="text/javascript" id="hexo.configurations" src="/js/src/util/hexoConfig.js"></script>
-  <link rel="canonical" href="http://yoursite.com/2019/11/18/hello-world/">
-  <title>97 commands in Linux</title>
-  <link rel="import" href="/header.html" />
+  <title>ConcurrentHashMap</title>
   <script src="/js/src/util/jquery.js"></script>
   <script>
     $(function() {
       $("#sidebar").load("/aside.html");
+      $('#text').load("/2016/10/01/content.txt");
     });
   </script>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en-gb">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en-bg">
   <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"></header>
-    <script src="/js/src/util/header.js"></script>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner">
+        <div class="site-brand-wrapper">
+          <div class="site-meta ">
+            <div class="custom-logo-site-title">
+              <a href="/" class="brand" rel="start">
+                <span class="logo-line-before"><i></i></span>
+                <span class="site-title">Enjoy Coding</span>
+                <span class="logo-line-after"><i></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="site-nav-toggle">
+            <button>
+              <span class="btn-bar"></span>
+              <span class="btn-bar"></span>
+              <span class="btn-bar"></span>
+            </button>
+          </div>
+        </div>
+
+        <nav class="site-nav">
+          <ul id="menu" class="menu">
+            <li class="menu-item menu-item-home">
+              <a href="/" rel="section">
+                <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+                Home
+              </a>
+            </li>
+
+            <li class="menu-item menu-item-tags">
+              <a href="/categories" rel="section">
+                <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+                Tags
+              </a>
+            </li>
+
+            <li class="menu-item menu-item-archives">
+              <a href="/archives" rel="section">
+                <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+                Archives
+              </a>
+            </li>
+
+            <li class="menu-item menu-item-about">
+              <a href="/about" rel="section">
+                <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+                About
+              </a>
+            </li>
+
+            <li class="menu-item menu-item-search">
+              <a href="javascript:;" class="popup-trigger">
+                <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+                Search
+              </a>
+            </li>
+          </ul>
+
+          <div class="site-search">
+            <div class="popup search-popup local-search-popup">
+              <div class="local-search-header clearfix">
+                <span class="search-icon">
+                  <i class="fa fa-search"></i>
+                </span>
+                <span class="popup-btn-close">
+                  <i class="fa fa-times-circle"></i>
+                </span>
+                <div class="local-search-input-wrapper">
+                  <input autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="Search..." spellcheck="false" type="text" id="local-search-input">
+                </div>
+              </div>
+              <div id="local-search-result"></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -49,20 +128,19 @@
           <div id="content" class="content">
             <div id="posts" class="posts-expand">
               <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-                <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/18/hello-world/">
                 <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <meta itemprop="name" content="贺敏（Minbo He）">
+                  <meta itemprop="name" content="Ant">
                   <meta itemprop="description" content>
-                  <meta itemprop="image" content="/uploads/avatar.png">
+                  <meta itemprop="image" content="/uploads/Ant.JPG">
                 </span>
 
                 <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                  <meta itemprop="name" content="Think Different">
+                  <meta itemprop="name" content="">
                 </span>
 
                 <header class="post-header">
                   <h2 class="post-title" itemprop="name headline">
-                    97 commands in Linux
+                    ConcurrentHashMap
                   </h2>
 
                   <div class="post-meta">
@@ -71,49 +149,57 @@
                         <i class="fa fa-calendar-o"></i>
                       </span>
                       <span class="post-meta-item-text"></span>
-                      <time title="Post" itemprop="dateCreated datePublished" datetime="2019-11-18T15:14:14+00:00">
-                        2019-11-18
+                      <time title="Post" itemprop="dateCreated datePublished" datetime="2019-09-01T22:30:00+01:00">
+                        2016-10-01
                       </time>
                     </span>
-                    <span class="post-meta-divider">|</span>
-                    <span class="page-pv">View
-                      <span class="busuanzi-value" id="busuanzi_value_page_pv">100</span>
-                    </span>
+
+                    <span class="post-category">
+                      <span class="post-meta-divider">|</span>
+                      <span class="post-meta-item-icon">
+                        <i class="fa fa-folder-o"></i>
+                      </span>
+                      <span class="post-meta-item-text"></span>
+
+                      <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                        <a href="/categories/Java/" itemprop="url" rel="index">
+                          <span itemprop="name">Java</span>
+                        </a>
+                      </span>
+
+                      <span class="post-meta-divider">|</span>
+
+                      <span class="page-pv">
+                        <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+                      </span>
                   </div>
                 </header>
 
                 <div class="post-body han-init-context" itemprop="articleBody">
-                  <p>ls [option][directory]</p>
-                  <figure class="highlight bash">
-                    <table>
-                      <tr>
-                        <td class="gutter">
-                          <pre><span class="line">1</span><br></pre>
-                        </td>
-                        <td class="code">
-                          <pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre>
-                        </td>
-                      </tr>
-                    </table>
-                  </figure>
-
+                  <p id="text"></p>
                 </div>
 
                 <footer class="post-footer">
+                  <div class="post-tags">
+                    <a href="/tags/Java/" rel="tag"># Java</a>
+                  </div>
+
                   <div class="post-nav">
                     <div class="post-nav-next post-nav-item">
-                      <a href="/2019/09/01/my-post5/" rel="next" title="【应用算法】信息流-推荐系统的去重策略">
-                        <i class="fa fa-chevron-left"></i> 【应用算法】信息流-推荐系统的去重策略
+                      <a href="/2018/06/22/my-post4/" rel="next" title="2018年上半年阅读总结">
+                        <i class="fa fa-chevron-left"></i> 2018年上半年阅读总结
                       </a>
                     </div>
+
                     <span class="post-nav-divider"></span>
                     <div class="post-nav-prev post-nav-item">
+                      <a href="/2019/11/18/hello-world/" rel="prev" title="Hello World">
+                        Hello World <i class="fa fa-chevron-right"></i>
+                      </a>
                     </div>
                   </div>
                 </footer>
               </article>
-
-
 
               <div class="post-spread">
                 <!-- JiaThis Button BEGIN -->
@@ -137,9 +223,9 @@
                 </script>
                 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
                 <!-- JiaThis Button END -->
+
               </div>
             </div>
-
           </div>
 
           <div class="comments" id="comments">
@@ -161,6 +247,7 @@
     <div class="back-to-top">
       <i class="fa fa-arrow-up"></i>
     </div>
+
   </div>
 
   <script type="text/javascript">
@@ -168,6 +255,7 @@
       window.Promise = null;
     }
   </script>
+
 
   <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
