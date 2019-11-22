@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html class="theme-next pisces use-motion" lang="en-gb">
 
 <head>
@@ -28,10 +27,16 @@
   <script type="text/javascript" id="hexo.configurations" src="/js/src/util/hexoConfig.js"></script>
   <link rel="canonical" href="http://yoursite.com/categories/Artificial Intelligence/AI/Reading/">
   <title> Categories: Reading</title>
+  <link rel="import" href="/header.html" />
+  <script src="/js/src/util/jquery.js"></script>
+  <script>
+    $(function() {
+      $("#sidebar").load("/aside.html");
+    });
+  </script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en-gb">
-
   <div class="container sidebar-position-left  ">
     <div class="headband"></div>
 
