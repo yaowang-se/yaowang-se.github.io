@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="theme-next pisces use-motion" lang="en-gb">
-
 <head>
   <meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
@@ -32,7 +31,7 @@
   <meta name="twitter:image" content="http://yoursite.com/uploads/s01.png">
   <script type="text/javascript" id="hexo.configurations" src="/js/src/util/hexoConfig.js"></script>
   <link rel="canonical" href="http://yoursite.com/2019/09/01/my-post5/">
-  <title> ConcurrentHashMap</title>
+  <title>ConcurrentHashMap</title>
   <link rel="import" href="/header.html" />
   <script src="/js/src/util/jquery.js"></script>
   <script>
@@ -47,6 +46,7 @@
     <div class="headband"></div>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"></header>
     <script src="/js/src/util/header.js"></script>
+
     <main id="main" class="main">
       <div class="main-inner">
         <aside id="sidebar" class="sidebar"></aside>
@@ -75,7 +75,7 @@
                       <span class="post-meta-item-icon">
                         <i class="fa fa-calendar-o"></i>
                       </span>
-                      <span class="post-meta-item-text">Post </span>
+                      <span class="post-meta-item-text"></span>
                       <time title="Post" itemprop="dateCreated datePublished" datetime="2019-09-01T22:30:00+01:00">
                         2016-09-01
                       </time>
@@ -86,7 +86,7 @@
                       <span class="post-meta-item-icon">
                         <i class="fa fa-folder-o"></i>
                       </span>
-                      <span class="post-meta-item-text">category </span>
+                      <span class="post-meta-item-text"></span>
 
                       <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                         <a href="/categories/Algorithm/" itemprop="url" rel="index">
@@ -104,22 +104,19 @@
 
                 <div class="post-body han-init-context" itemprop="articleBody">
                   <blockquote>
-                    <p>ConcurrentHashMap (before 1.7) contains 3 entity classes: ConcurrentHashMap, Segment, HashEntry.</p>
+                    <p>ConcurrentHashMap: Segment, HashEntry, ReentrantLock, Array, LinkedList</p>
                   </blockquote>
-                  <h2>Segment-Lock</h2>
-                  <p>HashMap is not synchronized and not thread safe.<br>
-                     HashTable is synchronized and ensure thread safe, but not efficient</p>
+                  <h2>Thread safe</h2>
+                  <p>HashMap is not synchronized and not thread-safe. Hashtable is synchronized, but not efficient</p>
+                  <p>ConconrrentHashMap contains an array of Segment. A Segement contains a array of LinkedList. The HashEntry is a element of LinkedList.</p>
                   <a id="more"></a>
-                  <p>ConcurrentHashMap is a segment-lock. If one thread is operating one segment, other segments are still available.</p>
-                  <p>Some methods have to use across-segment, such as size() and containsValue() which will lock all segments, and then release all locks by sequence.</p>
-                  <p><img src="/uploads/ConcurrentHashMap.jpg" alt="fig"></p>
-                  <p>As the figure above, ConcurrentHashMap consists of Segment array and HashEntry array.
-                    Segment uses ReentrantLock and play an import role in ConcurrentHashMap.
-                    HashEntry is used to store Key-Value data.</p>
-                  <p>ConcurrentHashMap contains a Segment array. Segment is similar to the HashMap. It's an Array-LinkedList structure.<br>
-                     Segment contains a HashEntry array.<br>
-                     HashEntry is a element of LinkedList.<br>
-                    The Segment lock protects the HashEntry array. Only after getting the segment lock, the HashEntry can be update.</p>
+                  <h2>Data Structure</h2>
+                  <p>HashMap/Hashtable: <br><img src="/uploads/DataStructure_HashMap.jpg" alt="HashMap"></p>
+                  <p>ConcurrentHashMap: Segment, HashEntry<br><img src="/uploads/DataStructure_ConcurrentHashMap.jpg" alt="ConcurrentHashMap"></p>
+
+                  <h2>Lock on the data</h2>
+                  <p>HashMap/Hashtable: <br><img src="/uploads/Lock_on_Hashtable.jpg" alt="HashMap"></p>
+                  <p>ConcurrentHashMap: <br><img src="/uploads/Lock_on_ConcurrentHashMap.jpg" alt="ConcurrentHashMap"></p>
                 </div>
 
                 <footer class="post-footer">
