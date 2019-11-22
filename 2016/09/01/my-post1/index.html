@@ -112,7 +112,7 @@
                   <a id="more"></a>
                   <p>ConcurrentHashMap is a segment-lock.When one thread is operating one segment, other segments are still available.</p>
                   <p>Some methods have to use across-segment, such as size() and containsValue() which will lock all segment, and then release all locks by sequence.</p>
-                  <p><img src="/uploads/ConcurrentHashMap.JPG" alt="first"></p>
+                  <p><img src="/uploads/ConcurrentHashMap.jpg" alt="fig"></p>
                   <p>As the figure above, ConcurrentHashMap consists of Segment array and HashEntry array.
                     Segment uses ReentrantLock and play an import role in ConcurrentHashMap.
                     HashEntry is used to store Key-Value data.</p>
